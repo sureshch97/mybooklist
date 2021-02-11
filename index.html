@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" 
+    crossorigin="anonymous" /> 
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book List</title>
+
+    <style>
+
+        .sucess , .error{
+           color: white;
+           text-align: center;
+           padding: 5px;
+
+        }
+        .sucess{
+           background-color: green;
+        }
+        .error{
+            background-color: red;
+        }
+     h1{
+       text-align: center;
+       color: blue;
+     }
+     h1 i{
+       color: royalblue;
+     }
+     span{
+       color: red;
+     }
+     .btn{
+       background-color: blue;
+       color: #fff;
+     }
+      
+         body{
+    width: 100%;
+	max-width: 600px;
+	background:#f1f1f1;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+    
+        } 
+
+    </style>
+</head>
+<body>
+  
+   <div class="container mt-4">
+          <h1 class="text-center displyed-4"> <i class="fas fa-book-open"></i> <span>My</span> Book List</h1>
+          <form id="book-form">
+          <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" id="title" class="u-full-width">
+          </div>
+          <div class="form-group">
+            <label for="title">Author</label>
+            <input type="text" id="author" class="u-full-width">
+        </div>
+        <div class="form-group">
+            <label for="title">ISBN#</label>
+            <input type="text" id="isbn" class="u-full-width">
+        </div>
+        <div class="form-group">
+            <input type="hidden" id="id" value="">
+        </div>
+        <div class="form-group">
+            <input type="submit" id="submit" value="Add Book" class="btn u-full-width">
+        </div>
+        </form>
+        <table class="u-full-width"> 
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                </tr>
+            
+            </thead>
+            <tbody class="book-list"></tbody>
+        </table>
+      </div>
+     
+      <script src="appes6.js"></script>
+  </body>
+  </html>
